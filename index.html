@@ -9,28 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Inter:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/index.js"></script>
     <title>Whirl</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <header>
-                <nav class="menu">
-                    <a class="logo" href="#">
-                        <img class="logo__img" src="/img/Whirl logo.jpg" alt="">
-                        <div class="logo__name">Whirl</div>
-                    </a>                    
-                    <a href="#" class="menu__item">Features</a>
-                    <a href="#" class="menu__item">Pricing</a>
-                    <a href="#" class="menu__item">Integrations</a>
-                    <a href="#" class="menu__item">Learn</a>
-                </nav>
-                <div class="options">
-                    <button class="options__item skinny_button button">Sing in</button>
-                    <button class="options__item fat_button button">Book a demo</button>
+        <header>
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__menu">
+                        <img class="logo" src="/img/Whirl logo.jpg"></img>
+                        <div class="name">Whirl</div>
+                        <div class="links">
+                            <a class="link" href="#">Features</a>
+                            <a class="link" href="#">Pricing</a>
+                            <a class="link" href="#">Integrations</a>
+                            <a class="link" href="#">Learn</a>
+                        </div>
+                    </div>
+                    <div class="header__options">
+                        <div class="header__option skinny_button button">Sign in</div>
+                        <div class="header__option fat_button button">Book a demo</div>
+                    </div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
         <section class="content">
             <div class="container">
                 <div class="automated">
@@ -43,11 +47,200 @@
                             <button class="button__learn skinny_button button">Learn more</button>
                         </div>
                     </div>
-                    <div class="automated__img">
-
+                    <img class="automated__img" src="./img/photo_2022-07-29_14-34-43.jpg"> </img>
+                </div>
+                <div class="trusted">
+                    <div class="trusted__title">Trusted by 50,000+ companies</div>
+                    <div class="trusted__items">
+                        <div class="trusted__item">
+                            <img class="trusted__logo company_logo" src="/img/discord.png"></img>
+                            <div class="trusted__name">Discord</div>
+                        </div>
+                        <div class="trusted__item">
+                            <img class="trusted__logo company_logo" src="/img/email.png"></img>
+                            <div class="trusted__name">Email</div>
+                        </div>
+                        <div class="trusted__item">
+                            <img class="trusted__logo company_logo" src="/img/telegram.png"></img>
+                            <div class="trusted__name">Telegram</div>
+                        </div>
+                        <div class="trusted__item">
+                            <img class="trusted__logo company_logo" src="/img/linkedin.png"></img>
+                            <div class="trusted__name">Linkedin</div>
+                        </div>
                     </div>
                 </div>
-            </div>            
+                <div class="preferences">
+                    <div class="preferences__item yellow">
+                        <img class="preferences__logo" src="/img/zip.png"></img>
+                        <div class="preferences__name">Fast. Really fast.</div>
+                        <div class="preferences__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                    <div class="preferences__item middle blue">
+                        <img class="preferences__logo" src="/img/money.png"></img>
+                        <div class="preferences__name">More bang for buck.</div>
+                        <div class="preferences__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                    <div class="preferences__item pink">
+                        <img class="preferences__logo" src="/img/hand.png"></img>
+                        <div class="preferences__name">Safe and secure.</div>
+                        <div class="preferences__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div>     
+            <div class="care">
+                <div class="container">
+                    
+                    <div class="care__title title">We will take care of everything, <br /> so you can get back to relaxing.</div>
+                    <div class="care__content">
+                        <div class="care__items">
+                            <div class="care__item">
+                                <img class="care__img" src="/img/clip.png"></img>
+                                <div class="care__name">Anti-loss technology</div>
+                                <div class="care__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua.</div>
+                            </div>
+                            <div class="care__item">
+                                <img class="care__img" src="/img/smile.png"></img>
+                                <div class="care__name">Exchange easily</div>
+                                <div class="care__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua.</div>
+                            </div>
+                            <div class="care__item">
+                                <img class="care__img" src="/img/email2.png"></img>
+                                <div class="care__name">Fully encrypted</div>
+                                <div class="care__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua.</div>
+                            </div>
+                            <div class="care__item">
+                                <img class="care__img" src="/img/zip2.png"></img>
+                                <div class="care__name">Plenty of options</div>
+                                <div class="care__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua.</div>
+                            </div>
+                        </div>
+                        <img class="care__picture" src="/img/computer.jpg"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="what">
+                    <div class="what__title">
+                        <div class="title__text title">What's Whirl <br /> all about?</div>
+                    </div>
+                    <div class="what__items">
+                        <div class="what__item">
+                            <img class="what__logo" src="/img/location.png"></img>
+                            <div class="what__subtitle">All on one place.</div>
+                            <div class="what__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div> 
+                        <div class="what__item">
+                            <img class="what__logo" src="/img/zalupa.png"></img>
+                            <div class="what__subtitle">Get daily alerts.</div>
+                            <div class="what__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                        </div>
+                        <div class="what__item">
+                            <img class="what__logo" src="/img/graph.png"></img>
+                            <div class="what__subtitle">Safe and secure.</div>
+                            <div class="what__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="set__background">
+                <div class="container">
+                    <div class="set">
+                        <img class="set__img" src="/img/lamp.jpg"></img>
+                        <div class="set__info">
+                            <div class="set__title">Set, forget, and then track.</div>
+                            <div class="set__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna
+                                aliqua.</div>
+                            <div class="set__check">Understand your options</div>
+                            <div class="set__check">No lock-ins</div>
+                            <div class="set__check">You own the shares</div>
+                            <button class="set__button fat_button button">Book a Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tasks">
+                    <div class="tasks__title title">Your tasks, automated.</div>
+                    <div class="tasks__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.</div>
+                    <div class="tasks__items">
+                        <div class="tasks__item">
+                            <img class="tasks__logo" src="/img/circles.png"></img>
+                            <div class="tasks__subtitle">Learn your options.</div>
+                            <div class="tasks__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                        <div class="tasks__item">
+                            <img class="tasks__logo" src="/img/zip3.jpg"></img>
+                            <div class="tasks__subtitle">Stay informed.</div>
+                            <div class="tasks__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloretro.</div>
+                        </div>
+                        <div class="tasks__item">
+                            <img class="tasks__logo" src="/img/like.png"></img>
+                            <div class="tasks__subtitle">Automate it all.</div>
+                            <div class="tasks__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ipsum.</div>
+                        </div>
+                        <div class="tasks__item">
+                            <img class="tasks__logo" src="/img/exclamation.png"></img>
+                            <div class="tasks__subtitle">Stay informed.</div>
+                            <div class="tasks__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et consectetur.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="get__background">
+                <div class="container">
+                    <div class="get">
+                        <div class="get__header">
+                            <div class="get__title title">Get smarter, with our blog.</div>
+                            <button class="get__button skinny_button button">See All Posts</button>
+                        </div>
+                        <div class="get__items">
+                            <div class="get__item">
+                                <div class="get__frame pink">
+                                    <img class="get__img" src="/img/phone.jpg"></img>
+                                </div>
+                                <div class="get__label">Improvements</div>
+                                <div class="get__subtitle">Automating Daily Tasks from Your Phone</div>
+                                <div class="get__text">Dicta nihil ratione corrupti. Aut dolorem dolores omnis laboriosam ratione sequi. Provident ad sed velit. Est ea ab.</div>
+                                <div class="get__date">April 24, 2022</div>
+                            </div>
+                            <div class="get__item middle">
+                                <div class="get__frame blue">
+                                    <img class="get__img" src="/img/computer2.jpg"></img>
+                                </div>
+                                <div class="get__label">Tips & Tricks</div>
+                                <div class="get__subtitle">Can You Automate Group Learning?</div>
+                                <div class="get__text">Dicta nihil ratione corrupti. Aut dolorem dolores omnis laboriosam ratione sequi. Provident ad sed velit. Est ea ab.</div>
+                                <div class="get__date">April 24, 2022</div>
+                            </div>
+                            <div class="get__item">
+                                <div class="get__frame yellow">
+                                    <img class="get__img" src="/img/friend.jpg"></img>
+                                </div>
+                                <div class="get__label">News</div>
+                                <div class="get__subtitle">Our $3,000,000 B Round Investors</div>
+                                <div class="get__text">Eos ipsum et est quis neque cum. Quis autem est eligendi amet animi eaque. Itaque minus illo delectus vel vitae dolores
+                                minus.</div>
+                                <div class="get__date">April 24, 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>Footer</footer>
     </div>
