@@ -901,7 +901,7 @@ header{
 
 .info__items{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .info__links{
@@ -919,8 +919,10 @@ header{
 }
 
 .info__column{
+    display: flex;
+    flex-direction: column;
     flex: 0 1 33.333%;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .info__text{
@@ -948,7 +950,7 @@ header{
     top: 33px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 767px){
     .newsletter{
         display: none;
     }
