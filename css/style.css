@@ -115,7 +115,7 @@ body{
 header{
     background-color: white;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 10;
 }
@@ -142,7 +142,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: end;
-    min-width: 240px;
 }
 
 .header__option{
@@ -290,7 +289,7 @@ header{
         position: absolute;
         background-color: black;
         width: 100%;
-        height: 5px;
+        height: 4px;
         top: 10px;
         z-index: 10;
 
@@ -408,6 +407,8 @@ header{
 
 .trusted__title{
     font-size: 24px;
+    /* margin: 0 auto; */
+    text-align: center;
     margin-bottom: 33px;
 }
 
@@ -416,23 +417,23 @@ header{
     margin-left: 8px;
 }
 
-
-
-.preferences{
+.preferences__items{
     display: flex;
-    flex: 0 1 33.333%;
-    justify-content: space-between;
-    margin-top: 160px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .preferences__item{
+    max-width: 270px;
     padding: 32px 33px;
-    margin: 0 15px;
+
+    margin: 10px 15px;
 }
 
 .preferences__logo{
     margin-bottom: 18px;
-    width: 30px;
+    max-width: 30px;
 }
 
 .preferences__name{
@@ -453,7 +454,6 @@ header{
 
 .blue{
     background-color: #CCEFF6;
-    /* margin: 0 32px; */
 }
 
 .pink{
@@ -543,7 +543,7 @@ header{
 }
 
 .care__title{
-    width: 630px;
+    max-width: 630px;
     font-size: 42px;
 }
 
@@ -612,6 +612,16 @@ header{
     height: 100%;
 }
 
+@media (max-width: 767px){
+    .set__img{
+        display: none;
+    }
+
+    .care__picture{
+        display: none;
+    }
+}
+
 .set__title{
     font-family: "Fraunces";
     font-size: 42px;
@@ -672,7 +682,7 @@ header{
 }
 
 .tasks__text{
-    width: 650px;
+    max-width: 350px;
     font-size: 18px;
     line-height: 27px;
 }
@@ -891,6 +901,7 @@ header{
 
 .info__items{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .info__links{
@@ -935,6 +946,12 @@ header{
 
 .info__inputbox:after{
     top: 33px;
+}
+
+@media (max-width: 500px){
+    .newsletter{
+        display: none;
+    }
 }
 
 .footer{
